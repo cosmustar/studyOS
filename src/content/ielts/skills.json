@@ -1,0 +1,52 @@
+{
+  "_about": "Fatos de formato do IELTS General Training conforme as páginas de ielts.org acessadas em 2026-11-23. Cada fato aponta para a fonte.",
+  "exam": "ielts-gt",
+  "checkedAt": "2026-11-23",
+  "skills": [
+    {
+      "id": "listening",
+      "title": "Listening",
+      "sourceId": "ielts-gt-listening",
+      "facts": [
+        "4 partes, 40 questões (10 por parte).",
+        "Aproximadamente 30 minutos + 10 minutos para transferir respostas.",
+        "Cada resposta correta vale 1 ponto.",
+        "Listening e Speaking são iguais no Academic e no General Training."
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "sourceId": "ielts-gt-reading",
+      "facts": [
+        "3 seções, de dificuldade crescente; 2.150–2.375 palavras no total.",
+        "40 questões em 60 minutos (incluindo transferência).",
+        "Cada resposta correta vale 1 ponto; o resultado é reportado em band de 1 a 9."
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "sourceId": "ielts-gt-writing",
+      "facts": [
+        "2 tarefas obrigatórias em 60 minutos.",
+        "Task 1: carta (pessoal, semiformal ou formal) com 3 bullet points; mínimo de 150 palavras, cerca de 20 minutos.",
+        "Task 2: essay discursivo; mínimo de 250 palavras, cerca de 40 minutos.",
+        "A Task 2 vale o dobro da Task 1 na nota de Writing."
+      ],
+      "criteria": ["Task achievement / Task response", "Coherence and cohesion", "Lexical resource", "Grammatical range and accuracy"]
+    },
+    {
+      "id": "speaking",
+      "title": "Speaking",
+      "sourceId": "ielts-gt-speaking",
+      "facts": [
+        "Entrevista presencial e gravada com examinador, 11–14 minutos, 3 partes.",
+        "Part 1 (introdução e entrevista): 4–5 minutos.",
+        "Part 2 (long turn): 3–4 minutos, com 1 minuto de preparação e fala de até 2 minutos.",
+        "Part 3 (discussão): 4–5 minutos."
+      ],
+      "criteria": ["Fluency and coherence", "Lexical resource", "Grammatical range and accuracy", "Pronunciation"]
+    }
+  ]
+}

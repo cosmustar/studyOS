@@ -1,0 +1,184 @@
+{
+  "_about": "Questões originais (não oficiais), escritas a partir dos objetivos SY0-801. 'defaults' é aplicado a cada item; um item pode sobrescrever qualquer campo.",
+  "defaults": {
+    "type": "mcq",
+    "exam": "secplus",
+    "examVersion": "SY0-801",
+    "sourceIds": ["comptia-sy0-801-objectives"],
+    "sourceUrl": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+    "lastVerified": null,
+    "validationStatus": "pending_review",
+    "origin": "original",
+    "createdBy": "ai",
+    "reviewedBy": null,
+    "needsConfirmation": []
+  },
+  "items": [
+    {
+      "id": "sp-q-1.1-001",
+      "title": "Control type for legacy system",
+      "domain": "1.0",
+      "objectiveCode": "1.1",
+      "difficulty": "medium",
+      "stem": "A hospital runs a legacy imaging server that cannot be patched. The security team places it on an isolated VLAN reachable only through a monitored jump host. Which control type BEST describes this measure?",
+      "options": [
+        { "id": "a", "text": "Corrective", "explanation": "Controles corretivos atuam depois do incidente para restaurar ou reduzir impacto. Aqui nada aconteceu ainda." },
+        { "id": "b", "text": "Compensating", "explanation": "Correto. O controle ideal (patch) não é viável, então uma alternativa reduz o risco no lugar dele." },
+        { "id": "c", "text": "Directive", "explanation": "Controles diretivos orientam comportamento (políticas, instruções). Isolamento de rede é uma medida técnica." },
+        { "id": "d", "text": "Deterring", "explanation": "Dissuasão busca desencorajar o atacante (ex.: avisos). A VLAN restringe acesso, não desencoraja." }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "sp-q-1.1-002",
+      "title": "Non-repudiation mechanism",
+      "domain": "1.0",
+      "objectiveCode": "1.1",
+      "difficulty": "easy",
+      "stem": "A finance director must not be able to later deny approving a wire transfer. Which mechanism BEST provides this assurance?",
+      "options": [
+        { "id": "a", "text": "Symmetric encryption of the approval record", "explanation": "Com chave simétrica, ambas as partes têm a mesma chave; qualquer uma poderia ter gerado o registro, então não há não repúdio." },
+        { "id": "b", "text": "A digital signature using the director's private key", "explanation": "Correto. Somente o detentor da chave privada consegue gerar a assinatura, o que vincula a aprovação ao diretor." },
+        { "id": "c", "text": "Hashing the approval record with SHA-256", "explanation": "Um hash sozinho prova integridade, mas não identifica quem criou o registro." },
+        { "id": "d", "text": "Storing the record on a RAID 1 array", "explanation": "RAID melhora disponibilidade, não identifica o autor." }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "sp-q-1.1-003",
+      "title": "Control category for awareness training",
+      "domain": "1.0",
+      "objectiveCode": "1.1",
+      "difficulty": "easy",
+      "needsConfirmation": ["Materiais de preparação divergem sobre classificar 'security guards' como operacional ou físico; por isso o cenário evita esse exemplo. Confirme a classificação de 'operational' no material oficial."],
+      "stem": "Staff attend quarterly phishing-awareness sessions, and the IT team follows a documented configuration-management routine performed manually by administrators. Which control category do these BEST fit?",
+      "options": [
+        { "id": "a", "text": "Technical", "explanation": "Controles técnicos são implementados por tecnologia (firewall, MFA). Aqui são pessoas executando atividades." },
+        { "id": "b", "text": "Managerial", "explanation": "Gerenciais tratam de governança e gestão de risco (políticas, avaliações). Treinamentos e rotinas de configuração são execução do dia a dia." },
+        { "id": "c", "text": "Operational", "explanation": "Correto. Controles operacionais são executados principalmente por pessoas na rotina." },
+        { "id": "d", "text": "Physical/environmental", "explanation": "Controles físicos/ambientais protegem instalações (fechaduras, cercas, climatização); nada no cenário é físico." }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "sp-q-1.1-004",
+      "title": "Zero Trust principle",
+      "domain": "1.0",
+      "objectiveCode": "1.1",
+      "difficulty": "medium",
+      "stem": "An employee connects from the corporate office LAN and is still required to re-authenticate and pass a device health check before reaching an internal HR application. Which principle is being applied?",
+      "options": [
+        { "id": "a", "text": "Zero Trust", "explanation": "Correto. Estar na rede interna não concede confiança implícita; cada acesso é verificado explicitamente." },
+        { "id": "b", "text": "Separation of duties", "explanation": "Segregação de funções divide tarefas críticas entre pessoas; não é o caso." },
+        { "id": "c", "text": "Implicit trust zones", "explanation": "O cenário é exatamente o oposto: não há confiança implícita pela localização." },
+        { "id": "d", "text": "Availability", "explanation": "Disponibilidade é sobre acesso quando necessário; o cenário trata de verificação de acesso." }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "sp-q-1.1-005",
+      "title": "Accounting in AAA",
+      "domain": "1.0",
+      "objectiveCode": "1.1",
+      "difficulty": "easy",
+      "stem": "After an incident, investigators need to know which administrator changed a firewall rule and when. Which AAA component provides this information?",
+      "options": [
+        { "id": "a", "text": "Authentication", "explanation": "Autenticação verifica a identidade no momento do login, mas não registra as ações posteriores." },
+        { "id": "b", "text": "Authorization", "explanation": "Autorização define o que pode ser feito, não o que foi feito." },
+        { "id": "c", "text": "Accounting", "explanation": "Correto. Accounting registra as ações realizadas (logs, trilhas de auditoria)." },
+        { "id": "d", "text": "Availability", "explanation": "Disponibilidade faz parte da tríade CIA, não do AAA." }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "sp-q-4.5-001",
+      "title": "Temporary admin access",
+      "domain": "4.0",
+      "objectiveCode": "4.5",
+      "difficulty": "medium",
+      "stem": "A database administrator needs administrative rights on a production cluster only during a two-hour maintenance window this weekend. Which approach BEST follows least privilege?",
+      "options": [
+        { "id": "a", "text": "Add the DBA permanently to the domain administrators group", "explanation": "Concede privilégio excessivo e permanente, ao contrário do menor privilégio." },
+        { "id": "b", "text": "Share the emergency break-glass account password with the DBA", "explanation": "Contas break-glass são para emergências reais; compartilhar a senha rompe a rastreabilidade." },
+        { "id": "c", "text": "Grant just-in-time privileged access that expires after the window", "explanation": "Correto. JIT concede o privilégio sob demanda e o revoga automaticamente." },
+        { "id": "d", "text": "Apply discretionary access control on the cluster", "explanation": "DAC deixa o dono do recurso decidir acessos; não resolve o problema de duração do privilégio." }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "sp-q-4.5-002",
+      "title": "Federation with a SaaS provider",
+      "domain": "4.0",
+      "objectiveCode": "4.5",
+      "difficulty": "medium",
+      "stem": "Employees should log in to a third-party SaaS payroll portal using their existing corporate credentials, with the corporate IdP sending signed XML assertions to the provider. Which technology is being described?",
+      "options": [
+        { "id": "a", "text": "SAML", "explanation": "Correto. SAML troca asserções XML assinadas entre o IdP e o Service Provider." },
+        { "id": "b", "text": "LDAP", "explanation": "LDAP consulta serviços de diretório; não define asserções XML trocadas com um SP externo." },
+        { "id": "c", "text": "OAuth", "explanation": "OAuth é um framework de autorização delegada baseado em tokens, não em asserções XML." },
+        { "id": "d", "text": "Time-based access control", "explanation": "Controle por horário não tem relação com federação." }
+      ],
+      "answer": "a"
+    },
+    {
+      "id": "sp-q-4.5-003",
+      "title": "Detecting privilege creep",
+      "domain": "4.0",
+      "objectiveCode": "4.5",
+      "difficulty": "easy",
+      "stem": "An auditor finds that several employees who changed departments still hold permissions from their previous roles. Which process would MOST directly detect this on an ongoing basis?",
+      "options": [
+        { "id": "a", "text": "Identity proofing", "explanation": "Identity proofing verifica a identidade antes de emitir credenciais; não revisa permissões existentes." },
+        { "id": "b", "text": "Periodic access reviews", "explanation": "Correto. Recertificações periódicas identificam acessos que deixaram de ser necessários." },
+        { "id": "c", "text": "Password expiration", "explanation": "Expirar senhas não altera as permissões associadas à conta." },
+        { "id": "d", "text": "Single sign-on", "explanation": "SSO simplifica a autenticação e não revisa autorizações." }
+      ],
+      "answer": "b"
+    },
+    {
+      "id": "sp-q-4.5-004",
+      "title": "Phishing-resistant authentication",
+      "domain": "4.0",
+      "objectiveCode": "4.5",
+      "difficulty": "medium",
+      "stem": "A company wants to reduce credential phishing. Users should authenticate without typing a shared secret, and the private key must never leave the user's device. Which option BEST meets this requirement?",
+      "options": [
+        { "id": "a", "text": "SMS one-time passwords", "explanation": "O OTP digitado ainda pode ser capturado por uma página falsa e repassado em tempo real." },
+        { "id": "b", "text": "Longer, more complex passwords", "explanation": "Senhas continuam sendo segredos compartilhados e podem ser digitadas em sites falsos." },
+        { "id": "c", "text": "Passkeys", "explanation": "Correto. Passkeys usam pares de chaves; a chave privada fica no dispositivo, e a assinatura fica vinculada à origem legítima." },
+        { "id": "d", "text": "Backup codes", "explanation": "Códigos de backup são segredos digitados e servem como recuperação, não como fator principal resistente a phishing." }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "sp-q-4.5-005",
+      "title": "Access control model by labels",
+      "domain": "4.0",
+      "objectiveCode": "4.5",
+      "difficulty": "medium",
+      "stem": "In a government system, files are labeled Confidential, Secret, or Top Secret and users receive clearances. Users cannot change a file's label or grant access to others. Which access control model is in use?",
+      "options": [
+        { "id": "a", "text": "Discretionary", "explanation": "No DAC o dono do recurso concede acesso, o que o cenário proíbe." },
+        { "id": "b", "text": "Role-based", "explanation": "RBAC atribui permissões a funções, não a rótulos de classificação e níveis de habilitação." },
+        { "id": "c", "text": "Mandatory", "explanation": "Correto. No MAC, rótulos e habilitações são impostos pelo sistema e os usuários não podem alterá-los." },
+        { "id": "d", "text": "Rule-based", "explanation": "Rule-based aplica regras gerais (ex.: ACL); o elemento central aqui são rótulos de classificação." }
+      ],
+      "answer": "c"
+    },
+    {
+      "id": "sp-q-4.5-006",
+      "title": "Service account hygiene",
+      "domain": "4.0",
+      "objectiveCode": "4.5",
+      "difficulty": "hard",
+      "stem": "A backup application runs under an account that is also used interactively by two engineers, and its password has not changed in four years. Which change BEST addresses the risk?",
+      "options": [
+        { "id": "a", "text": "Convert it to a dedicated non-interactive service account with managed credential rotation", "explanation": "Correto. Contas de serviço devem ser exclusivas do serviço, sem login interativo e com rotação de credenciais." },
+        { "id": "b", "text": "Add the account to the emergency access group", "explanation": "Acesso de emergência é para situações excepcionais e aumentaria o privilégio." },
+        { "id": "c", "text": "Enable time-based access so the account works only during business hours", "explanation": "Backups costumam rodar fora do horário comercial, e isso não resolve o uso compartilhado nem a senha antiga." },
+        { "id": "d", "text": "Require the engineers to use a password manager for the shared password", "explanation": "Melhora o armazenamento da senha, mas mantém o compartilhamento e a falta de rastreabilidade." }
+      ],
+      "answer": "a"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "_about": "Catálogo de fontes. 'checkedAt' = data em que a página foi acessada; 'checkedBy' = quem acessou. 'status' continua 'pending_review' até você (humano) confirmar a fonte no painel.",
+  "sources": [
+    {
+      "id": "comptia-secplus-overview",
+      "title": "CompTIA Security+ — página oficial da certificação",
+      "publisher": "CompTIA",
+      "official": true,
+      "url": "https://www.comptia.org/en-us/certifications/security/",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": "Indica V8 como versão recomendada; V7 disponível até a aposentadoria."
+    },
+    {
+      "id": "comptia-secplus-v8",
+      "title": "CompTIA Security+ V8 (SY0-801) — detalhes do exame",
+      "publisher": "CompTIA",
+      "official": true,
+      "url": "https://www.comptia.org/en-us/certifications/security/v8/",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": "Lançamento: 17/11/2026. Máx. 90 questões, 90 minutos, aprovação 750 (escala 100–900)."
+    },
+    {
+      "id": "comptia-secplus-v7",
+      "title": "CompTIA Security+ V7 (SY0-701) — detalhes do exame",
+      "publisher": "CompTIA",
+      "official": true,
+      "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": "Aposentadoria (inglês): 11/06/2027. Não utilizada como base do curso."
+    },
+    {
+      "id": "comptia-sy0-801-objectives",
+      "title": "CompTIA Security+ SY0-801 V8 Exam Objectives (Document Version 2.0)",
+      "publisher": "CompTIA",
+      "official": true,
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": "PDF linkado na página V8 ('Preview the full Security+ V8 exam objectives'). Códigos e títulos dos objetivos extraídos deste documento."
+    },
+    {
+      "id": "ielts-gt-overview",
+      "title": "IELTS General Training test — visão geral",
+      "publisher": "IELTS (ielts.org)",
+      "official": true,
+      "url": "https://ielts.org/take-a-test/test-types/ielts-general-training-test",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": ""
+    },
+    {
+      "id": "ielts-gt-listening",
+      "title": "IELTS General Training — formato do Listening",
+      "publisher": "IELTS (ielts.org)",
+      "official": true,
+      "url": "https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-listening",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": ""
+    },
+    {
+      "id": "ielts-gt-reading",
+      "title": "IELTS General Training — formato do Reading",
+      "publisher": "IELTS (ielts.org)",
+      "official": true,
+      "url": "https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": ""
+    },
+    {
+      "id": "ielts-gt-writing",
+      "title": "IELTS General Training — formato do Writing",
+      "publisher": "IELTS (ielts.org)",
+      "official": true,
+      "url": "https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-writing",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": ""
+    },
+    {
+      "id": "ielts-gt-speaking",
+      "title": "IELTS General Training — formato do Speaking",
+      "publisher": "IELTS (ielts.org)",
+      "official": true,
+      "url": "https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-speaking",
+      "checkedAt": "2026-11-23",
+      "checkedBy": "assistant-web-fetch",
+      "status": "pending_review",
+      "notes": ""
+    }
+  ]
+}

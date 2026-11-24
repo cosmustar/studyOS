@@ -1,0 +1,71 @@
+{
+  "_about": "Domínios e objetivos copiados literalmente (apenas códigos e títulos) do documento oficial SY0-801 V8 Exam Objectives v2.0. Pesos conforme a página V8 e a tabela do PDF.",
+  "exam": "secplus",
+  "examVersion": "SY0-801",
+  "sourceId": "comptia-sy0-801-objectives",
+  "checkedAt": "2026-11-23",
+  "domains": [
+    {
+      "code": "1.0",
+      "title": "General Security Concepts",
+      "weight": 16,
+      "objectives": [
+        { "code": "1.1", "title": "Explain security concepts and controls." },
+        { "code": "1.2", "title": "Given a scenario, demonstrate the impact of change management processes on security." },
+        { "code": "1.3", "title": "Explain the importance of using appropriate cryptographic solutions." }
+      ]
+    },
+    {
+      "code": "2.0",
+      "title": "Threats, Vulnerabilities, and Attacks",
+      "weight": 24,
+      "objectives": [
+        { "code": "2.1", "title": "Explain characteristics of threats and vulnerabilities." },
+        { "code": "2.2", "title": "Describe common threat actors and motivations." },
+        { "code": "2.3", "title": "Describe threat vectors and sources." },
+        { "code": "2.4", "title": "Explain types of vulnerabilities and attack surfaces." },
+        { "code": "2.5", "title": "Given a scenario, analyze indicators of malicious activity." },
+        { "code": "2.6", "title": "Summarize threats and vulnerabilities associated with artificial intelligence (AI) usage." }
+      ]
+    },
+    {
+      "code": "3.0",
+      "title": "Security Architecture",
+      "weight": 19,
+      "objectives": [
+        { "code": "3.1", "title": "Compare and contrast security implications of different architecture models." },
+        { "code": "3.2", "title": "Given a scenario, manage the security architecture to best protect the infrastructure." },
+        { "code": "3.3", "title": "Summarize concepts and strategies used to protect data." },
+        { "code": "3.4", "title": "Explain the importance of resilience and recovery in security architecture." }
+      ]
+    },
+    {
+      "code": "4.0",
+      "title": "Security Operations",
+      "weight": 27,
+      "objectives": [
+        { "code": "4.1", "title": "Given a scenario, apply mitigating controls, techniques, and solutions to secure the environment." },
+        { "code": "4.2", "title": "Explain the security implications of proper hardware, software, and data asset management." },
+        { "code": "4.3", "title": "Given a scenario, perform tasks associated with vulnerability management." },
+        { "code": "4.4", "title": "Explain security alerting and monitoring concepts and tools." },
+        { "code": "4.5", "title": "Given a scenario, apply concepts related to identity and access management." },
+        { "code": "4.6", "title": "Given a scenario, apply automation and orchestration solutions to secure operations." },
+        { "code": "4.7", "title": "Summarize concepts associated with incident response activities." },
+        { "code": "4.8", "title": "Given a scenario, use data, artifacts and sources to support a security investigation." }
+      ]
+    },
+    {
+      "code": "5.0",
+      "title": "Security Program Management and Oversight",
+      "weight": 14,
+      "objectives": [
+        { "code": "5.1", "title": "Explain the importance of governance, risk, and compliance artifacts." },
+        { "code": "5.2", "title": "Explain the impact of risk management processes on the security of the organization." },
+        { "code": "5.3", "title": "Explain the assessment and management processes associated with third-party risk." },
+        { "code": "5.4", "title": "Summarize elements of effective security compliance." },
+        { "code": "5.5", "title": "Explain concepts associated with audit and assessment activities." },
+        { "code": "5.6", "title": "Given a scenario, apply security awareness concepts to improve organizational security." }
+      ]
+    }
+  ]
+}

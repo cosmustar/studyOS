@@ -1,0 +1,106 @@
+{
+  "_about": "Textos e questões ORIGINAIS no estilo da Seção 1 do Reading General Training (textos do cotidiano). Não são material oficial do IELTS.",
+  "sets": [
+    {
+      "id": "ielts-r-set-001",
+      "type": "reading_set",
+      "title": "Riverside Community Centre — Winter Programme",
+      "exam": "ielts-gt",
+      "examVersion": null,
+      "domain": "reading",
+      "objectiveCode": null,
+      "sourceIds": ["ielts-gt-reading"],
+      "sourceUrl": "https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading",
+      "lastVerified": null,
+      "validationStatus": "pending_review",
+      "origin": "original",
+      "createdBy": "ai",
+      "reviewedBy": null,
+      "difficulty": "easy",
+      "needsConfirmation": [],
+      "section": 1,
+      "suggestedMinutes": 20,
+      "suggestedMinutesNote": "Sugestão do StudyOS: 60 minutos ÷ 3 seções. Não é uma regra oficial por seção.",
+      "instructions": "Read the text below and answer the questions. Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "passage": [
+        "Riverside Community Centre is pleased to announce its winter programme, running from 6 January to 28 March. Registration opens on 2 December and can be completed online or at the front desk between 9 a.m. and 5 p.m., Monday to Friday.",
+        "Beginner Pottery (Tuesdays, 7–9 p.m.) is limited to eight participants per term. All clay and tools are provided, although participants are asked to bring an apron. Firing of finished pieces takes approximately two weeks after the final class.",
+        "Family Swim Sessions take place every Saturday morning. Children under eight must be accompanied in the water by an adult at all times. Lockers require a one-dollar coin, which is returned when the key is handed back.",
+        "Our Job Seekers' Workshop, held on the first Monday of each month, offers free advice on writing CVs and preparing for interviews. Places are allocated on a first-come, first-served basis, and no booking is required.",
+        "Residents of the Riverside district receive a 20% discount on all paid courses. Proof of address, such as a recent utility bill, must be shown at the time of registration. Refunds are available up to seven days before a course begins; after that, a credit note will be issued instead."
+      ],
+      "questions": [
+        {
+          "id": "ielts-r-001-q1",
+          "stem": "Registration for the winter programme can only be done in person.",
+          "options": [
+            { "id": "T", "text": "TRUE", "explanation": "O texto diz que a inscrição pode ser feita online OU na recepção." },
+            { "id": "F", "text": "FALSE", "explanation": "Correto. 'Can be completed online or at the front desk' contradiz 'only in person'." },
+            { "id": "NG", "text": "NOT GIVEN", "explanation": "A informação existe e contradiz a afirmação, então não é Not Given." }
+          ],
+          "answer": "F"
+        },
+        {
+          "id": "ielts-r-001-q2",
+          "stem": "Pottery participants need to bring their own tools.",
+          "options": [
+            { "id": "T", "text": "TRUE", "explanation": "O texto afirma que argila e ferramentas são fornecidas." },
+            { "id": "F", "text": "FALSE", "explanation": "Correto. 'All clay and tools are provided' — só o avental deve ser levado." },
+            { "id": "NG", "text": "NOT GIVEN", "explanation": "O texto trata explicitamente das ferramentas." }
+          ],
+          "answer": "F"
+        },
+        {
+          "id": "ielts-r-001-q3",
+          "stem": "The pottery instructor has taught at the centre for many years.",
+          "options": [
+            { "id": "T", "text": "TRUE", "explanation": "Não há informação sobre o instrutor." },
+            { "id": "F", "text": "FALSE", "explanation": "Nada no texto contradiz isso; simplesmente não há informação." },
+            { "id": "NG", "text": "NOT GIVEN", "explanation": "Correto. O texto não menciona o instrutor." }
+          ],
+          "answer": "NG"
+        },
+        {
+          "id": "ielts-r-001-q4",
+          "stem": "The coin used for a locker is given back to the user.",
+          "options": [
+            { "id": "T", "text": "TRUE", "explanation": "Correto. 'Which is returned when the key is handed back.'" },
+            { "id": "F", "text": "FALSE", "explanation": "O texto confirma a devolução da moeda." },
+            { "id": "NG", "text": "NOT GIVEN", "explanation": "A informação está no terceiro parágrafo." }
+          ],
+          "answer": "T"
+        },
+        {
+          "id": "ielts-r-001-q5",
+          "stem": "People must book in advance to attend the Job Seekers' Workshop.",
+          "options": [
+            { "id": "T", "text": "TRUE", "explanation": "O texto diz o contrário." },
+            { "id": "F", "text": "FALSE", "explanation": "Correto. 'No booking is required.'" },
+            { "id": "NG", "text": "NOT GIVEN", "explanation": "A informação existe e contradiz a afirmação." }
+          ],
+          "answer": "F"
+        },
+        {
+          "id": "ielts-r-001-q6",
+          "stem": "A resident who cancels three days before a course starts will receive a credit note rather than a refund.",
+          "options": [
+            { "id": "T", "text": "TRUE", "explanation": "Correto. Reembolso só até 7 dias antes; depois disso, é emitido um crédito." },
+            { "id": "F", "text": "FALSE", "explanation": "Três dias está dentro do período sem reembolso, então a afirmação está de acordo com o texto." },
+            { "id": "NG", "text": "NOT GIVEN", "explanation": "A política de reembolso está explícita no último parágrafo." }
+          ],
+          "answer": "T"
+        },
+        {
+          "id": "ielts-r-001-q7",
+          "stem": "The discount for Riverside residents also applies to the swimming sessions.",
+          "options": [
+            { "id": "T", "text": "TRUE", "explanation": "O desconto vale para 'paid courses'; o texto não diz se as sessões de natação são pagas ou consideradas cursos." },
+            { "id": "F", "text": "FALSE", "explanation": "Não há informação suficiente para contradizer." },
+            { "id": "NG", "text": "NOT GIVEN", "explanation": "Correto. O texto não informa se a natação é um curso pago." }
+          ],
+          "answer": "NG"
+        }
+      ]
+    }
+  ]
+}

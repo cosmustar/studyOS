@@ -1,0 +1,118 @@
+{
+  "lessons": [
+    {
+      "id": "sp-l-1.1-controls",
+      "type": "lesson",
+      "title": "Security concepts and controls",
+      "exam": "secplus",
+      "examVersion": "SY0-801",
+      "domain": "1.0",
+      "objectiveCode": "1.1",
+      "sourceIds": ["comptia-sy0-801-objectives"],
+      "sourceUrl": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+      "lastVerified": null,
+      "validationStatus": "pending_review",
+      "origin": "original",
+      "createdBy": "ai",
+      "reviewedBy": null,
+      "difficulty": "easy",
+      "estimatedMinutes": 20,
+      "needsConfirmation": [],
+      "learningObjectives": [
+        "Explicar CIA, AAA, não repúdio, Zero Trust e menor privilégio.",
+        "Classificar um controle por categoria (técnico, gerencial, operacional, físico/ambiental).",
+        "Classificar um controle por tipo (preventivo, dissuasivo, detectivo, corretivo, compensatório, diretivo)."
+      ],
+      "body": [
+        { "type": "h", "text": "Defense in depth" },
+        { "type": "p", "text": "Defesa em profundidade significa sobrepor camadas de controles para que a falha de um não comprometa o ambiente inteiro. O objetivo 1.1 da SY0-801 agrupa sob esse tema os conceitos abaixo." },
+        { "type": "list", "items": [
+          "Confidentiality, Integrity, Availability (CIA): confidencialidade impede acesso não autorizado à informação; integridade garante que ela não foi alterada indevidamente; disponibilidade garante acesso quando necessário.",
+          "Authentication, Authorization, Accounting (AAA): autenticação prova quem você é; autorização define o que você pode fazer; accounting registra o que foi feito (logs, trilhas de auditoria).",
+          "Non-repudiation: impede que alguém negue ter realizado uma ação. Assinaturas digitais são o exemplo clássico, porque só o dono da chave privada consegue produzi-las.",
+          "Zero Trust: nenhuma confiança implícita baseada na localização na rede. Toda requisição é verificada de forma explícita, com base em identidade, dispositivo e contexto.",
+          "Least privilege: cada identidade recebe apenas as permissões mínimas necessárias, pelo tempo necessário."
+        ]},
+        { "type": "h", "text": "Control categories (quem/como o controle é implementado)" },
+        { "type": "list", "items": [
+          "Technical/logical: implementado por tecnologia — firewall, MFA, criptografia, ACLs.",
+          "Managerial/administrative: políticas, avaliações de risco, procedimentos de contratação.",
+          "Operational: executado por pessoas no dia a dia — vigilância por guardas, treinamento de conscientização, gestão de configuração.",
+          "Physical/environmental: protege o ambiente físico — fechaduras, cercas, controle de temperatura e supressão de incêndio."
+        ]},
+        { "type": "h", "text": "Control types (o que o controle faz)" },
+        { "type": "list", "items": [
+          "Preventive: impede o incidente antes que ocorra (ex.: bloqueio de conta após tentativas falhas).",
+          "Deterring: desencoraja o atacante (ex.: placa de 'área monitorada').",
+          "Detective: identifica o incidente durante ou após (ex.: IDS, revisão de logs).",
+          "Corrective: restaura ou reduz o impacto após o incidente (ex.: restaurar backup).",
+          "Compensating: alternativa quando o controle principal não é viável (ex.: segmentar um sistema legado que não aceita patch).",
+          "Directive: orienta comportamento (ex.: política que obriga o uso de VPN)."
+        ]},
+        { "type": "example", "text": "Cenário: um servidor legado não suporta MFA. A equipe o isola em uma VLAN acessível apenas por um jump server com MFA. A categoria é técnica, e o tipo é compensatório — ele substitui o controle que não pôde ser aplicado diretamente." },
+        { "type": "note", "text": "Dica de prova: um mesmo controle pode ter uma categoria E um tipo. Leia a pergunta e veja se ela quer o 'category' ou o 'type'." }
+      ]
+    },
+    {
+      "id": "sp-l-4.5-iam",
+      "type": "lesson",
+      "title": "Identity and access management in practice",
+      "exam": "secplus",
+      "examVersion": "SY0-801",
+      "domain": "4.0",
+      "objectiveCode": "4.5",
+      "sourceIds": ["comptia-sy0-801-objectives"],
+      "sourceUrl": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+      "lastVerified": null,
+      "validationStatus": "pending_review",
+      "origin": "original",
+      "createdBy": "ai",
+      "reviewedBy": null,
+      "difficulty": "medium",
+      "estimatedMinutes": 30,
+      "needsConfirmation": [
+        "A SY0-801 lista LDAP sob 'Single sign-on (SSO)'. Tecnicamente LDAP é um protocolo de diretório usado como backend de autenticação; confirme no material oficial CompTIA como o tema é cobrado."
+      ],
+      "learningObjectives": [
+        "Aplicar provisioning/deprovisioning e revisão de acessos em cenários.",
+        "Diferenciar federação, SSO, SAML, OAuth e LDAP.",
+        "Escolher o modelo de controle de acesso adequado (RBAC, rule-based, MAC, DAC, time-based, JIT).",
+        "Comparar fatores de MFA e conceitos modernos de senha (passkeys, passwordless)."
+      ],
+      "body": [
+        { "type": "h", "text": "Ciclo de vida da identidade" },
+        { "type": "p", "text": "Provisioning cria contas e concede acessos; deprovisioning remove-os quando a pessoa sai ou muda de função. Falhas de deprovisioning geram contas órfãs e acúmulo de privilégios (privilege creep). Identity proofing é a verificação de que a pessoa é quem diz ser antes de emitir a credencial (ex.: checagem de documento no onboarding)." },
+        { "type": "p", "text": "Access review (recertificação) é a revisão periódica feita por gestores ou donos de sistema para confirmar se cada acesso ainda é necessário. É o controle que detecta privilege creep." },
+        { "type": "h", "text": "Federação e SSO" },
+        { "type": "list", "items": [
+          "Federation: relação de confiança entre domínios de identidade diferentes. O usuário se autentica no Identity Provider (IdP) da própria organização e acessa um Service Provider (SP) externo.",
+          "SSO: uma autenticação dá acesso a vários sistemas sem novo login.",
+          "SAML: padrão XML que troca asserções de autenticação/atributos entre IdP e SP; comum em SSO web corporativo.",
+          "OAuth: framework de autorização delegada — permite que um app acesse recursos em nome do usuário via tokens, sem receber a senha. Para autenticação, usa-se OpenID Connect sobre OAuth 2.0.",
+          "LDAP: protocolo para consultar e modificar serviços de diretório (ex.: Active Directory). Frequentemente é a base de identidades usada pelo SSO."
+        ]},
+        { "type": "h", "text": "Tipos de conta" },
+        { "type": "list", "items": [
+          "User: uso cotidiano, sem privilégios administrativos.",
+          "Privileged (global ou local): administração; deve ser separada da conta de uso diário e monitorada (PAM).",
+          "Service: usada por aplicações/serviços; não interativa, com credenciais rotacionadas.",
+          "Third-party: fornecedores; acesso restrito, com prazo e revisão.",
+          "Emergency access (break-glass): uso excepcional, credenciais guardadas com segurança e uso sempre auditado."
+        ]},
+        { "type": "h", "text": "Modelos de controle de acesso" },
+        { "type": "list", "items": [
+          "Role-based (RBAC): permissões atribuídas a funções; usuários recebem funções.",
+          "Rule-based: regras globais aplicadas a todos (ex.: firewall/ACL, bloqueio por condição).",
+          "Mandatory (MAC): rótulos de classificação definidos pelo sistema/administração; o usuário não altera.",
+          "Discretionary (DAC): o dono do recurso decide quem acessa.",
+          "Time-based: acesso permitido apenas em janelas de horário.",
+          "Just-in-time (JIT): privilégio concedido sob demanda, por tempo limitado, e revogado automaticamente."
+        ]},
+        { "type": "h", "text": "MFA e senhas" },
+        { "type": "p", "text": "Fatores de MFA citados no objetivo: hard token, soft token (app autenticador), biometria, OTP e backup codes. MFA exige fatores de categorias diferentes (algo que você sabe, tem, é)." },
+        { "type": "p", "text": "Passkeys usam pares de chaves (FIDO2/WebAuthn): a chave privada fica no dispositivo e nunca é enviada ao servidor, o que as torna resistentes a phishing. Boas práticas de senha envolvem comprimento, complexidade, não reutilização, idade/expiração, monitoramento de credenciais comprometidas e auditoria de contas." },
+        { "type": "example", "text": "Cenário: um DBA precisa de acesso administrativo à produção só durante uma janela de manutenção. A melhor resposta tende a ser JIT (privilégio temporário com aprovação e expiração automática), e não adicioná-lo permanentemente ao grupo de administradores." }
+      ]
+    }
+  ]
+}

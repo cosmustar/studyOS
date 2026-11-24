@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Tokens de design: cores e fontes da marca StudyOS.
+   No Tailwind v4, cada --color-* vira classes como bg-navy-900, text-mint-400 etc. */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-navy-950: #070b14;
+  --color-navy-900: #0b1220;
+  --color-navy-850: #0f1829;
+  --color-navy-800: #131e33;
+  --color-navy-700: #1c2a45;
+  --color-navy-600: #2a3b5e;
+  --color-navy-400: #5b6f96;
+
+  --color-mint-300: #9ee6c4;
+  --color-mint-400: #6fd3a8;
+  --color-mint-500: #45b886;
+}
+
+html, body, #root { height: 100%; }
+body {
+  @apply bg-navy-950 text-slate-200 antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+/* Animação leve de entrada usada nas páginas */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-in { animation: fade-in-up 220ms ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-in { animation: none; }
+}

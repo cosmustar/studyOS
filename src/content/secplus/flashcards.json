@@ -1,0 +1,25 @@
+{
+  "_about": "Flashcards originais. A interface de estudo de flashcards chega na Fase 3; por enquanto eles aparecem no catálogo da Biblioteca.",
+  "defaults": {
+    "type": "flashcard",
+    "exam": "secplus",
+    "examVersion": "SY0-801",
+    "sourceIds": ["comptia-sy0-801-objectives"],
+    "sourceUrl": "https://lecbyo.files.cmp.optimizely.com/download/77f3bd3223ac11f180820e495f189928",
+    "lastVerified": null,
+    "validationStatus": "pending_review",
+    "origin": "original",
+    "createdBy": "ai",
+    "reviewedBy": null,
+    "difficulty": "easy",
+    "needsConfirmation": []
+  },
+  "items": [
+    { "id": "sp-f-1.1-001", "title": "Compensating control", "domain": "1.0", "objectiveCode": "1.1", "front": "What is a compensating control?", "back": "Uma alternativa adotada quando o controle principal não é viável, reduzindo o risco a um nível aceitável (ex.: isolar um sistema que não aceita patch)." },
+    { "id": "sp-f-1.1-002", "title": "Non-repudiation", "domain": "1.0", "objectiveCode": "1.1", "front": "Which mechanism provides non-repudiation?", "back": "Assinatura digital: só o dono da chave privada consegue gerá-la." },
+    { "id": "sp-f-1.1-003", "title": "AAA", "domain": "1.0", "objectiveCode": "1.1", "front": "AAA stands for…", "back": "Authentication (quem você é), Authorization (o que pode fazer), Accounting (o que fez)." },
+    { "id": "sp-f-4.5-001", "title": "JIT access", "domain": "4.0", "objectiveCode": "4.5", "front": "Just-in-time (JIT) access", "back": "Privilégio concedido sob demanda, por tempo limitado e revogado automaticamente." },
+    { "id": "sp-f-4.5-002", "title": "SAML vs OAuth", "domain": "4.0", "objectiveCode": "4.5", "front": "SAML vs OAuth — main difference?", "back": "SAML troca asserções XML de autenticação entre IdP e SP. OAuth delega autorização por tokens; autenticação sobre OAuth usa OpenID Connect." },
+    { "id": "sp-f-4.5-003", "title": "Break-glass account", "domain": "4.0", "objectiveCode": "4.5", "front": "Emergency access (break-glass) account", "back": "Conta altamente privilegiada para emergências; credenciais guardadas com segurança e todo uso auditado." }
+  ]
+}
